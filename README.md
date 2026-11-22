@@ -2,6 +2,8 @@
 
 A small TypeScript library that turns a purchase into a payment plan (interest-free "Pay in 4" or an amortized monthly loan), applies merchant refunds, and quotes early payoff, without ever losing or inventing a cent. A React calculator in `web/` shows it in use.
 
+**Live calculator:** https://installment-engine.vercel.app
+
 The point of the project is the testing: 98 tests, 16 of them property-based with [fast-check](https://fast-check.dev/), which check invariants over thousands of random plans instead of a few examples I picked by hand. Those property tests found two real rounding problems in my first version (see [What the property tests found](#what-the-property-tests-found)).
 
 ```
